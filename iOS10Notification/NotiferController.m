@@ -77,6 +77,10 @@
 - (void)userNotificationCenter:(UNUserNotificationCenter *)center
 didReceiveNotificationResponse:(UNNotificationResponse *)response
          withCompletionHandler:(void (^)())completionHandler {
+    // タッチした時の処理
+    NSLog(@"Touch Notifer");
+    
+    // 終了
     completionHandler();
 }
 
