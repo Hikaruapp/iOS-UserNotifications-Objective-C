@@ -62,6 +62,42 @@
     }];
 }
 
+- (void)notiferRequestFiveSecondWithImag {
+    
+    UNMutableNotificationContent* content = [[UNMutableNotificationContent alloc] init];
+    content.title    = [NSString localizedUserNotificationStringForKey:@"Hello!"
+                                                             arguments:nil];
+    content.body     = [NSString localizedUserNotificationStringForKey:@"Yokohama Station"
+                                                             arguments:nil];
+    content.subtitle = [NSString localizedUserNotificationStringForKey:@"Hello_message_with_image"                                                             arguments:nil];
+    content.sound    = [UNNotificationSound defaultSound];
+    
+    // image
+    NSURL *urlImage =  [[NSBundle mainBundle] URLForResource:@"train" withExtension:@"mp4"];
+    UNNotificationAttachment *attachment = [UNNotificationAttachment attachmentWithIdentifier:@"com.hikaruapp.testNotifer"
+                                                                                          URL:urlImage
+                                                                                      options:nil
+                                                                                        error:nil];
+    content.attachments = @[attachment];
+    
+    // Deliver the notification in five seconds.
+    UNTimeIntervalNotificationTrigger* trigger = [UNTimeIntervalNotificationTrigger
+                                                  triggerWithTimeInterval:5
+                                                  repeats:NO];
+    UNNotificationRequest* request = [UNNotificationRequest requestWithIdentifier:@"FiveSecond"
+                                                                          content:content
+                                                                          trigger:trigger];
+    
+    // Schedule the notification.
+    UNUserNotificationCenter* center = [UNUserNotificationCenter currentNotificationCenter];
+    [center addNotificationRequest:request
+             withCompletionHandler:^(NSError * _Nullable error) {
+                 if (!error) {
+                     NSLog(@"notifer with image request sucess");
+                 }
+             }];
+}
+
 #pragma mark - Notifer delegate
 // アプリがフォアグランドの時表示前に呼ばれる
 - (void)userNotificationCenter:(UNUserNotificationCenter *)center

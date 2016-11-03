@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2831BAD1DCAD778001AAC98 /* train.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E2831BAC1DCAD778001AAC98 /* train.mp4 */; };
 		E2B1453B1DAFB19A00CD9384 /* NotiferiOS9Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B1453A1DAFB19A00CD9384 /* NotiferiOS9Controller.m */; };
 		E2B71A9F1DA9FFE400BF0022 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B71A9E1DA9FFE400BF0022 /* main.m */; };
 		E2B71AA21DA9FFE400BF0022 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B71AA11DA9FFE400BF0022 /* AppDelegate.m */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E2831BAC1DCAD778001AAC98 /* train.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = train.mp4; sourceTree = "<group>"; };
 		E2B145391DAFB19A00CD9384 /* NotiferiOS9Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotiferiOS9Controller.h; sourceTree = "<group>"; };
 		E2B1453A1DAFB19A00CD9384 /* NotiferiOS9Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotiferiOS9Controller.m; sourceTree = "<group>"; };
 		E2B71A9A1DA9FFE400BF0022 /* iOS10Notification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS10Notification.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +78,7 @@
 				E2B71AA91DA9FFE400BF0022 /* Assets.xcassets */,
 				E2B71AAB1DA9FFE400BF0022 /* LaunchScreen.storyboard */,
 				E2B71AAE1DA9FFE400BF0022 /* Info.plist */,
+				E2831BAC1DCAD778001AAC98 /* train.mp4 */,
 				E2B71A9D1DA9FFE400BF0022 /* Supporting Files */,
 			);
 			path = iOS10Notification;
@@ -115,11 +118,12 @@
 		E2B71A921DA9FFE300BF0022 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = hikaruApp;
 				TargetAttributes = {
 					E2B71A991DA9FFE300BF0022 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = R5D9KEMY6M;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -149,6 +153,7 @@
 			files = (
 				E2B71AAD1DA9FFE400BF0022 /* LaunchScreen.storyboard in Resources */,
 				E2B71AAA1DA9FFE400BF0022 /* Assets.xcassets in Resources */,
+				E2831BAD1DCAD778001AAC98 /* train.mp4 in Resources */,
 				E2B71AA81DA9FFE400BF0022 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,6 +213,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -230,7 +236,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -255,6 +261,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -271,7 +278,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -282,7 +289,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = R5D9KEMY6M;
 				INFOPLIST_FILE = iOS10Notification/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hikaruapp.iOS10Notification;
@@ -294,7 +301,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = R5D9KEMY6M;
 				INFOPLIST_FILE = iOS10Notification/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hikaruapp.iOS10Notification;

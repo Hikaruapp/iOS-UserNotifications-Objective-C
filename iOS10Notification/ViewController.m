@@ -13,6 +13,7 @@
 
 @interface ViewController ()
 - (IBAction)postiOS10Notification:(id)sender;
+- (IBAction)postiOS10Notificationwithimage:(id)sender;
 - (IBAction)postiOS9Notification:(id)sender;
 
 @property ( nonatomic ) NotiferController     *ios10notifer;
@@ -44,7 +45,12 @@
     [self.ios10notifer notiferRequestFiveSecond];
 }
 
+- (IBAction)postiOS10Notificationwithimage:(id)sender {
+    [self.ios10notifer notiferRequestFiveSecondWithImag];
+}
+
 - (IBAction)postiOS9Notification:(id)sender {
     [self.ios9notifer notiferRequestFiveSecondiOS9];
 }
+
 @end

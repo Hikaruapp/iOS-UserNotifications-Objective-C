@@ -10,4 +10,5 @@
 
 @interface NotiferController : NSObject
 - (void)notiferRequestFiveSecond;
+- (void)notiferRequestFiveSecondWithImag;
 @end

@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,12 +22,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8M3-u7-kus">
+                                <rect key="frame" x="108" y="28" width="158" height="30"/>
                                 <state key="normal" title="Post iOS10 Notification"/>
                                 <connections>
                                     <action selector="postiOS10Notification:" destination="BYZ-38-t0r" eventType="touchUpInside" id="trD-CS-oTu"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="et8-hH-nEf">
+                                <rect key="frame" x="69" y="66" width="237" height="30"/>
+                                <state key="normal" title="Post iOS10 Notification with Image"/>
+                                <connections>
+                                    <action selector="postiOS10Notificationwithimage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Enx-8S-mn9"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbd-oh-QSH">
+                                <rect key="frame" x="112" y="126" width="151" height="30"/>
                                 <state key="normal" title="Post iOS9 Notification"/>
                                 <connections>
                                     <action selector="postiOS9Notification:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z7B-cw-K2m"/>
@@ -33,15 +45,18 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="vbd-oh-QSH" firstAttribute="top" secondItem="8M3-u7-kus" secondAttribute="bottom" constant="8" id="SVG-IT-7GX"/>
-                            <constraint firstItem="8M3-u7-kus" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="XRH-GG-rrE"/>
-                            <constraint firstItem="vbd-oh-QSH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b9C-J7-Ava"/>
-                            <constraint firstItem="8M3-u7-kus" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="paG-e3-Zl6"/>
+                            <constraint firstItem="8M3-u7-kus" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="7kz-of-em2"/>
+                            <constraint firstItem="8M3-u7-kus" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="80w-aW-Oah"/>
+                            <constraint firstItem="et8-hH-nEf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HZ8-uO-Y2Q"/>
+                            <constraint firstItem="vbd-oh-QSH" firstAttribute="top" secondItem="et8-hH-nEf" secondAttribute="bottom" constant="30" id="KF7-ee-0Na"/>
+                            <constraint firstItem="vbd-oh-QSH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fZh-6Z-QBV"/>
+                            <constraint firstItem="et8-hH-nEf" firstAttribute="top" secondItem="8M3-u7-kus" secondAttribute="bottom" constant="8" id="r21-jH-WI7"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="88.799999999999997" y="86.806596701649184"/>
         </scene>
     </scenes>
 </document>
